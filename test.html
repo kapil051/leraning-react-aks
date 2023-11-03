@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+     <p id="one">hy</p>
+     <p id="two">hello</p>
+
+           <button onclick="myFun()">create new para!</button>
+
+        <script>
+
+              function myFun(){
+
+
+                   const myBody=document.getElementsByTagName("body")[0];
+                           console.log(myBody);
+
+                    //   const newPara=document.createElement("p");
+
+                    //  const text=document.createTextNode("newPraraText!");
+                    //         newPara.appendChild(text)
+                    //   document.body.appendChild(newPara);
+
+                      const paras =document.getElementsByTagName("p");
+
+                         const newTextNode=document.createTextNode(" world");
+
+                         paras[1].appendChild(newTextNode);
+              } 
+
+              
+                
+
+        </script>
+
+</body>
+</html>
